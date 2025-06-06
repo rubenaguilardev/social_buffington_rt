@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import logo from "../assets/logo-v.png"
+import logo from "../assets/sb.png"
 
 const NavLinks = () => {
     return (
@@ -21,10 +21,10 @@ const Nav = () => {
     }
 
     return (
-        <nav className="flex justify-between items-center w-full flex-wrap text-gray-950 mt-5 px-4">
-            <div className="logo h-16 w-16 mb-4">
-                <img src={logo} alt="logo" />
-            </div>
+        <nav className="flex justify-between w-full flex-wrap items-center text-gray-950">
+            
+                <img src={logo} alt="logo" className="logo h-16 w-16"/>
+            
             <div className="hidden md:flex space-x-8 font-mono text-sm">
                 <NavLinks/>
             </div>
