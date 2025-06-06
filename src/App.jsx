@@ -1,19 +1,17 @@
-import Navbar from "./components/Navbar"
-import Socials from "./components/Socials"
+import Nav from "./components/Nav"
 import Hero from "./components/Hero"
-import EmailSide from "./components/EmailSide"
+import SideBars from "./components/SideBars"
 
 const App = () => {
   return (
     <div className="overflow-x-hidden antialiased text-stone-300">
       <div className="fixed inset-0 -z-10">
-        <div class="absolute top-0 -z-10 h-full w-full bg-white"><div class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div></div>
+        <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
       </div>
-      <div className="container mx-auto px-8">
-        <Navbar />
+      <div className="container mx-auto px-6">
+        <Nav/>
         <Hero />
-        <Socials />
-        <EmailSide />
+        <SideBars />
       </div>
       
     </div>
