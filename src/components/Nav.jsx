@@ -7,13 +7,13 @@ const NavLinks = () => {
     return (
         <>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/about">
-            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-2">01.</span>About</NavLink>
+            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-1">01.</span>About</NavLink>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/gallery">
-            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-2">02.</span>Photography</NavLink>
+            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-1">02.</span>Photography</NavLink>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/work">
-            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-2">03.</span>My Work</NavLink>
+            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-1">03.</span>My Work</NavLink>
              <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/contact">
-            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-2">04.</span>Contact</NavLink>
+            <span className="text-[#6633ee] text-center text-md font-mono mb-1 pr-1">04.</span>Contact</NavLink>
         </>
     )
 }
@@ -26,9 +26,10 @@ const Nav = () => {
     }
 
     return (
-        <nav className="flex justify-between w-full items-center text-gray-900 mt-5">
+        <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center
+        text-gray-900 px-6 py-3 backdrop-blur-md">
             <img src={logo} alt="logo" className="z-41 h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18"/>
-            <div className="items-center hidden md:flex space-x-8 font-mono text-md">
+            <div className="items-center hidden md:flex space-x-7 font-mono text-lg">
                 <NavLinks/>
             </div>
             <div className="md:hidden">
@@ -37,13 +38,13 @@ const Nav = () => {
                 </button> 
             </div>
             
-            {isOpen && (
-                <div className="fixed inset-0 z-40 backdrop-blur-lg">
-                    <div className="fixed top-0 right-0 w-[30vh] h-full 
-                    bg-[radial-gradient(125% 125% at 70% 90%, #fff 35%, #6366f1 100%)] 
+            {/* {isOpen && (
+                <div className="fixed inset-0 z-60 backdrop-blur-lg">
+                    <div className="absolute top-0 right-0 w-full h-full 
+                    bg-[#63e]
                     text-lg shadow-xl">
-                        <div className="flex flex-col justify-end p-2">
-                            <button onClick={toogleNavBar} className="text-[#6633ee] self-end pr-6 pt-7 mb-5">
+                        <div className=" flex-col justify-end p-2">
+                            <button onClick={toogleNavBar} className="text-white self-end pr-4 pt-4 mb-5">
                                 <X size={32}/>
                             </button>
                             <div className="flex flex-1 flex-col items-center justify-center mt-8 text-xl 
@@ -54,9 +55,7 @@ const Nav = () => {
                         </div>
                     </div>
                 </div>
-            )}
-
-
+            )} */}
         </nav>
     )
 }
