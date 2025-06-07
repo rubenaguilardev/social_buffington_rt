@@ -7,8 +7,8 @@ export const HERO_SKILLS = [
 
 export const HERO_TEXT = `
     I'm a dynamic marketing guru with a passion for creativity and innovation.
-    With over a decade of experience under my belt, I specialize in all things social media, 
-    digital marketing, photography and epic event planning.
+    With over a decade of experience under my belt, I specialize in social media, 
+    digital marketing, photography, design, and epic event planning.
 `
 export const ABOUT_CONTENT = `    
     When I'm not conquering the 

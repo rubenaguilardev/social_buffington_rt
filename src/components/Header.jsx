@@ -5,7 +5,7 @@ import Nav from "./Nav"
 const Header = () => {
 
     const [text] = useTypewriter({
-        words: ['Digital Marketing.', 'Social Media.', 'Photography.', 'Event Planning.', 'Designing.'],
+        words: ['Digital Marketing.', 'Social Media.', 'Photography.', 'Event Planning.', 'Design.'],
         loop: {},
         typeSpeed: 120,
         deleteSpeed: 80
@@ -23,8 +23,8 @@ const Header = () => {
                     </h2>
                     <span className="bg-gradient-to-r from-gray-900 to-gray-400 bg-clip-text 
                     text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-tight 
-                    text-transparent font-semibold">I do {text}</span>
-                    <p className="my-2 max-w-4xl py-6 text-lg sm:text-xl leading-relaxed tracking-tight text-gray-700">
+                    text-transparent font-semibold">I excel in all things {text}</span>
+                    <p className="my-2 max-w-3xl py-6 text-lg sm:text-xl leading-relaxed tracking-tight text-gray-700">
                     {HERO_TEXT}</p>
                     <button class="relative z-0 h-12 rounded-full font-semibold px-6 text-neutral-50 after:absolute 
                     after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-full after:bg-[#6633ee]
