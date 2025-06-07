@@ -38,9 +38,9 @@ const Nav = () => {
             </div>
             
             {isOpen && (
-                <div className="fixed inset-0 z-40 backdrop-blur-sm">
+                <div className="fixed inset-0 z-40 backdrop-blur-lg">
                     <div className="fixed top-0 right-0 w-[30vh] h-full 
-                    bg-[radial-gradient(125% 125% at 50% 90%, #fff 35%, #6366f1 100%)] 
+                    bg-[radial-gradient(125% 125% at 70% 90%, #fff 35%, #6366f1 100%)] 
                     text-lg shadow-xl">
                         <div className="flex flex-col justify-end p-2">
                             <button onClick={toogleNavBar} className="text-[#6633ee] self-end pr-6 pt-7 mb-5">
