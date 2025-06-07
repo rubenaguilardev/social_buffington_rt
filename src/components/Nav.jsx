@@ -26,7 +26,7 @@ const Nav = () => {
     }
 
     return (
-        <nav className="flex justify-between w-full items-center text-gray-900 mt-6">
+        <nav className="flex justify-between w-full items-center text-gray-900 mt-5">
             <img src={logo} alt="logo" className="z-41 h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18"/>
             <div className="items-center hidden md:flex space-x-8 font-mono text-md">
                 <NavLinks/>

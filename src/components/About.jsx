@@ -13,7 +13,7 @@ const About = () => {
                 <div className="mb-16 md:self-start">
                     <p className="text-gray-700 flex justify-center text-lg sm:text-xl">{ABOUT_CONTENT}</p>
                 </div>
-                <img src={profilePic} alt="Jazmin" className="border border-[#63e] md:w-1/2 md:self-start 
+                <img src={profilePic} alt="Jazmin" className="border border-[#63e] md:w-1/3 md:self-start 
                 mt-7 md:mt-0 mr-5 bg-[radial-gradient(125%_125%_at_50%_10%,_white_20%,_#6366f1_100%)] rounded-full" />
                 </div>
                 
