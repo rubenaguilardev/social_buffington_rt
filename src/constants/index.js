@@ -14,4 +14,14 @@ export const ABOUT_CONTENT = `
     When I'm not conquering the 
     marketing world, you can find me exploring my love for culinary arts and soaking up 
     precious moments with my family. Intrigued? Let's connect!
+    When I'm not conquering the 
+    marketing world, you can find me exploring my love for culinary arts and soaking up 
+    precious moments with my family. Intrigued? Let's connect!
+    When I'm not conquering the 
+    marketing world, you can find me exploring my love for culinary arts and soaking up 
+    precious moments with my family. Intrigued? Let's connect!
+    When I'm not conquering the 
+    marketing world, you can find me exploring my love for culinary arts and soaking up 
+    precious moments with my family. Intrigued? Let's connect!
+    
 `
