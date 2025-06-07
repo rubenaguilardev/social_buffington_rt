@@ -22,7 +22,7 @@ const Header = () => {
                     Jazmin Buffington.
                     </h2>
                     <span className="bg-gradient-to-r from-gray-900 to-gray-400 bg-clip-text 
-                    text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-tight 
+                    text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-tight 
                     text-transparent font-semibold">I excel in all things {text}</span>
                     <p className="my-2 max-w-3xl py-6 text-lg sm:text-xl leading-relaxed tracking-tight text-gray-700">
                     {HERO_TEXT}</p>
