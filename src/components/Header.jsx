@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <header className="flex flex-col min-h-screen w-full">
             <Nav />
-            <div className="flex flex-1 items-center md:px-15 lg:px-22 xl:m-auto xl:px-0">
+            <div className="flex flex-1 items-center md:px-15 lg:px-26 xl:m-auto xl:px-0">
                 <div>
                     <h1 className="text-[#6633ee] pb-3 sm:text-lg lg:text-xl font-mono">Hi, nice to meet you. My name is</h1>
                     <h2 className="pb-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl
