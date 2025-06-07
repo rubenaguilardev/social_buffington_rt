@@ -3,7 +3,7 @@ import profilePic from "../assets/Jazmin.png"
 
 const About = () => {
     return (
-        <section className="flex flex-col">
+        <section className="flex flex-col md:flex-row md:items-center">
             <div className="flex items-center gap-3 mb-5">
                 <p className="text-3xl font-semibold text-gray-900">
                 <span className="text-lg text-[#63e] mr-2">01.</span> About Me</p>
