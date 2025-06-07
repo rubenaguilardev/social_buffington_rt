@@ -15,7 +15,7 @@ const App = () => {
       <div className="px-6">
         <Header />
         <SideBars />
-        {/* <About/> */}
+        <About/>
       </div> 
     </div>
     

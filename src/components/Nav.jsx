@@ -44,7 +44,8 @@ const Nav = () => {
                             <button onClick={toogleNavBar} className="text-[#6633ee] self-end pr-9 pt-6 mb-5">
                                 <X size={32}/>
                             </button>
-                            <div className="flex flex-1 flex-col items-center justify-center mt-8 text-xl space-y-7">
+                            <div className="flex flex-1 flex-col items-center justify-center mt-8 text-xl 
+                            space-y-7 font-semibold">
                                 <NavLinks/>
                             </div>
                             
