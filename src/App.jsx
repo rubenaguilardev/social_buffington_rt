@@ -6,7 +6,7 @@ import Skills from "./components/SKills"
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden antialiased text-stone-300">
+    <div className="overflow-x-hidden antialiased">
       <div className="fixed inset-0 -z-10">
         <div className="min-h-screen w-full relative">
         <div className="absolute inset-0 z-0"

@@ -13,13 +13,13 @@ const Sidebars = () => {
             <FaInstagram /></a>
           <a href="https://facebook.com" className="mb-4 hover:text-[#413268] transition text-2xl">
             <FaFacebook /></a>
-          <div className="w-px h-20 bg-[#63e] mt-4"></div>
+          <div className="w-px h-30 bg-[#63e] mt-4"></div>
         </div>
         <div className="flex flex-col items-center text-[#63e] font-mono pointer-events-auto">
           <a href={`mailto:${email}`}
             className="mb-4 text-sm tracking-widest hover:text-[#413268] transition"
             style={{ writingMode: 'vertical-rl' }}>{email}</a>
-          <div className="w-px h-20 bg-[#63e] mt-4"></div>
+          <div className="w-px h-30 bg-[#63e] mt-4"></div>
         </div>
       </div>
     </div>
