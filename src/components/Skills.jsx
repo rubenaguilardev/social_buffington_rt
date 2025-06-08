@@ -24,7 +24,7 @@ const Skills = () => {
     const prevImage = () => setIndex(prev => prev === 0 ? images.length - 1 : prev - 1)
 
     return (
-        <section className="relative">
+        <section className="relative flex flex-col">
             <div className="flex gap-x-20 lg:items-start items-center lg:flex-row flex-col">
                 <div className="sm:w-[400px] sm:h-[400px] w-[300px] h-[300px] relative">
                     {images}
@@ -32,8 +32,7 @@ const Skills = () => {
                 <div className="relative sm:w-[400px] w-[320px] mt-22 lg:mt-5">
                     {descriptions}
                 </div>
-            </div>
-            <div className="absolute flex bottom-0 lg:-bottom-20 left-1/2 -translate-1/2 gap-x-5">
+                <div className="">
                 <button className="bg-gray-100 p-1.5 cursor-pointer rounded-full text-gray-600
                 hover:bg-gray-200 transition-colors" onClick={prevImage}>
                     <ArrowLeft size={18}/>
@@ -45,6 +44,8 @@ const Skills = () => {
                     <ArrowRight size={18}/>
                 </button>
             </div>
+            </div>
+            
         </section>
     )
 }
