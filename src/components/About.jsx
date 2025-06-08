@@ -1,5 +1,6 @@
 import { ABOUT_CONTENT } from "../constants"
 import profilePic from "../assets/Jazmin.png"
+import Skills from "./Skills"
 
 const About = () => {
     return (
@@ -18,6 +19,7 @@ const About = () => {
                     bg-[radial-gradient(125%_125%_at_50%_10%,_white_20%,_#6366f1_100%)] rounded-full" />
                 </div>
             </div>
+             <Skills/>
         </section>
     )
 }
