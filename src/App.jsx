@@ -7,7 +7,7 @@ import Skills from "./components/Skills"
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden antialiased">
+    <div id="home" className="overflow-x-hidden antialiased scroll-smooth">
       <div className="fixed inset-0 -z-10">
         <div className="min-h-screen w-full relative">
         <div className="absolute inset-0 z-0"

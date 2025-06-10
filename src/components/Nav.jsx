@@ -6,14 +6,14 @@ import logo from "../assets/logo.png"
 const NavLinks = () => {
     return (
         <>
-            <NavLink className="hover:text-[#00519c] flex flex-col md:flex-row" to="/about">
-            <span className="text-[#00519c] mb-1 pr-1">01.</span>About</NavLink>
-            <NavLink className="hover:text-[#00519c] flex flex-col md:flex-row" to="/gallery">
-            <span className="text-[#00519c] mb-1 pr-1">02.</span>Photography</NavLink>
-            <NavLink className="hover:text-[#00519c] flex flex-col md:flex-row" to="/work">
-            <span className="text-[#00519c] mb-1 pr-1">03.</span>My Work</NavLink>
-             <NavLink className="hover:text-[#00519c] flex flex-col md:flex-row" to="/contact">
-            <span className="text-[#00519c] mb-1 pr-1">04.</span>Contact</NavLink>
+            <a href="#about" className="hover:text-[#00519c] flex flex-col md:flex-row">
+            <span className="text-[#00519c] mb-1 pr-1">01.</span>About</a>
+            <a href="#Photography" className="hover:text-[#00519c] flex flex-col md:flex-row" to="/gallery">
+            <span className="text-[#00519c] mb-1 pr-1">02.</span>Photography</a>
+            <a href="#work"className="hover:text-[#00519c] flex flex-col md:flex-row" to="/work">
+            <span className="text-[#00519c] mb-1 pr-1">03.</span>My Work</a>
+             <a href="#contact" className="hover:text-[#00519c] flex flex-col md:flex-row" to="/contact">
+            <span className="text-[#00519c] mb-1 pr-1">04.</span>Contact</a>
         </>
     )
 }
@@ -27,8 +27,8 @@ const Nav = () => {
 
     return (
         <nav className="flex justify-between w-full items-center text-gray-900 mt-6">
-            <img src={logo} alt="logo" className="z-41 h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18"/>
-            <div className="items-center hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#home"><img src={logo} alt="logo" className="z-41 h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18"/></a> 
+            <div className="items-center hidden md:flex space-x-8 text-sm font-medium pr-4">
                 <NavLinks/>
             </div>
             <div className="md:hidden">
