@@ -10,13 +10,14 @@ const About = () => {
                 <span className="text-[1.5rem] mr-2 text-custom">01.</span>About Me</p>
                 <div className="flex-1 h-px bg-[#00519c]"></div>
             </div>
-            <div className="flex flex-col md:flex-row justify-center md:pl-5 gap-4">
-                <div className="mb-10 md:self-start">
-                    <p className="text-gray-700 flex justify-center text-lg sm:text-xl">{ABOUT_CONTENT}</p>
-                </div>
-                <div className="w-full flex justify-center">
+            <div className="flex flex-col md:flex-row justify-center md:pl-7 gap-4">
+                <div className="w-full flex justify-center pr-5 mb-10">
                     <img src={profilePic} alt="Jazmin" className="rounded-2xl shadow-xl" />
                 </div>
+                <div className="md:self-start pr-5">
+                    <p className="text-gray-700 flex justify-center text-lg sm:text-xl">{ABOUT_CONTENT}</p>
+                </div>
+                
             </div>
             <SkillSlides/>
         </section>

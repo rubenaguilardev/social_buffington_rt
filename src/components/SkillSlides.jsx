@@ -31,11 +31,11 @@ const SkillSlides = () => {
     const Arrow = ({direction, onClick}) => (
         <div className="hidded group-hover:block absolute top-[50%] translate-x-0
         translate-y-[-50%] text-2xl rounded-full p-2 text-white cursor-pointer text-gray-300"
-        style={{[direction]: '20px'}}>
+        style={{[direction]: '10px'}}>
         { direction === 'left' ? (
-            <BsFillArrowLeftCircleFill onClick={onClick} size={30}/>
+            <BsFillArrowLeftCircleFill onClick={onClick} size={25}/>
         ) : (
-            <BsFillArrowRightCircleFill onClick={onClick} size={30}/>
+            <BsFillArrowRightCircleFill onClick={onClick} size={25}/>
         )}
         </div>
     )
@@ -47,7 +47,7 @@ const SkillSlides = () => {
             bg-cover dureaction-500">
                 <div className="flex flex-col justify-center items-center h-full w-full text-white">
                     <h2 className="text-2xl font-semi-bold">{SKILL_SLIDES[currentIndex].title}</h2>
-                    <p className="w-1/2 self-center">{SKILL_SLIDES[currentIndex].description}</p>
+                    <p className="w-1/2 self-center text-center">{SKILL_SLIDES[currentIndex].description}</p>
                 </div>
                 
             </div>
