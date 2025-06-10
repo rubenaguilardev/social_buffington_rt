@@ -32,7 +32,7 @@ const Nav = () => {
                 <NavLinks/>
             </div>
             <div className="md:hidden">
-                <button onClick={toogleNavBar} className="text-[#6633ee] p-2 cursor-pointer">
+                <button onClick={toogleNavBar} className="text-custom p-2 cursor-pointer">
                     <Menu size={32}/>
                 </button> 
             </div>
@@ -41,7 +41,7 @@ const Nav = () => {
                 <div className="fixed inset-0 z-40 backdrop-blur-sm">
                     <div className="fixed top-0 right-0 w-[35vh] h-full bg-white text-lg shadow-md">
                         <div className="flex flex-col justify-end p-2">
-                            <button onClick={toogleNavBar} className="text-[#6633ee] self-end pr-6 pt-7 mb-5">
+                            <button onClick={toogleNavBar} className="text-custom self-end pr-6 pt-7 mb-5">
                                 <X size={32}/>
                             </button>
                             <div className="flex flex-1 flex-col items-center justify-center mt-8 text-xl 
