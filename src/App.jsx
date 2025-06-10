@@ -2,6 +2,7 @@
 import Header from "./components/Header"
 import SideBars from "./components/SideBars"
 import About from "./components/About"
+import Skills from "./components/Skills"
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
         <Header />
         <SideBars />
         <About/>
-       
+        <Skills/>
       </div> 
     </div>
     

@@ -7,13 +7,13 @@ const NavLinks = () => {
     return (
         <>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/about">
-            <span className="text-[#6633ee] font-mono mb-1 pr-1">01.</span>About</NavLink>
+            <span className="text-[#6633ee] mb-1 pr-1">01.</span>About</NavLink>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/gallery">
-            <span className="text-[#6633ee] font-mono mb-1 pr-1">02.</span>Photography</NavLink>
+            <span className="text-[#6633ee] mb-1 pr-1">02.</span>Photography</NavLink>
             <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/work">
-            <span className="text-[#6633ee] font-mono mb-1 pr-1">03.</span>My Work</NavLink>
+            <span className="text-[#6633ee] mb-1 pr-1">03.</span>My Work</NavLink>
              <NavLink className="hover:text-[#6633ee] flex flex-col md:flex-row" to="/contact">
-            <span className="text-[#6633ee] font-mono mb-1 pr-1">04.</span>Contact</NavLink>
+            <span className="text-[#6633ee] mb-1 pr-1">04.</span>Contact</NavLink>
         </>
     )
 }
@@ -28,7 +28,7 @@ const Nav = () => {
     return (
         <nav className="flex justify-between w-full items-center text-gray-900 mt-6">
             <img src={logo} alt="logo" className="z-41 h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18"/>
-            <div className="items-center hidden md:flex space-x-8 font-mono text-sm">
+            <div className="items-center hidden md:flex space-x-8 text-sm">
                 <NavLinks/>
             </div>
             <div className="md:hidden">

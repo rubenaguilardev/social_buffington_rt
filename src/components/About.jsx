@@ -7,7 +7,7 @@ const About = () => {
         <section className="flex flex-col md:px-15 lg:px-22 xl:px-30 2xl:px-44">
             <div className="flex items-center gap-3 mb-12">
                 <p className="text-3xl font-semibold text-gray-900">
-                <span className="text-[1.5rem] text-[#63e] mr-2 font-mono">01.</span>About Me</p>
+                <span className="text-[1.5rem] text-[#63e] mr-2">01.</span>About Me</p>
                 <div className="flex-1 h-px bg-[#63e]"></div>
             </div>
             <div className="flex flex-col md:flex-row justify-center md:pl-5 gap-4">

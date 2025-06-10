@@ -9,13 +9,10 @@ const Sidebars = () => {
         <div className="flex flex-col items-center justify-end text-[#63e] pointer-events-auto">
           <a href="https://www.linkedin.com/in/jazmin-aguilar-buffington/" className="mb-4 hover:text-[#413268] transition text-2xl">
             <FaLinkedin /></a>
-          <a href="https://instagram.com" className="mb-4 hover:text-[#413268] transition text-2xl">
-            <FaInstagram /></a>
-          <a href="https://facebook.com" className="mb-4 hover:text-[#413268] transition text-2xl">
-            <FaFacebook /></a>
+          
           <div className="w-px h-30 bg-[#63e] mt-4"></div>
         </div>
-        <div className="flex flex-col items-center text-[#63e] font-mono pointer-events-auto">
+        <div className="flex flex-col items-center text-[#63e] pointer-events-auto">
           <a href={`mailto:${email}`}
             className="mb-4 text-sm tracking-widest hover:text-[#413268] transition"
             style={{ writingMode: 'vertical-rl' }}>{email}</a>
