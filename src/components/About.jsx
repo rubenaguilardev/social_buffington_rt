@@ -1,6 +1,6 @@
 import { ABOUT_CONTENT } from "../constants"
 import profilePic from "../assets/Jazmin.png"
-import Skills from "./Skills"
+import SkillSlides from "./SkillSlides"
 
 const About = () => {
     return (
@@ -15,11 +15,10 @@ const About = () => {
                     <p className="text-gray-700 flex justify-center text-lg sm:text-xl">{ABOUT_CONTENT}</p>
                 </div>
                 <div className="w-full flex justify-center">
-                    <img src={profilePic} alt="Jazmin" className="border border-[#00519c]
-                    rounded-3xl" />
+                    <img src={profilePic} alt="Jazmin" className="rounded-2xl shadow-xl" />
                 </div>
             </div>
-             <Skills/>
+            <SkillSlides/>
         </section>
     )
 }

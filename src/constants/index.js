@@ -22,7 +22,7 @@ export const ABOUT_CONTENT = `
     precious moments with my family. Intrigued? Let's connect!
 `
 
-export const SKILLS = [ 
+export const SKILL_SLIDES = [ 
     {
         title: 'Creative Storytelling',
         image: storytelling,
