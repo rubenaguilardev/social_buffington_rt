@@ -45,9 +45,9 @@ const SkillSlides = () => {
             <div style={{backgroundImage: `url(${SKILL_SLIDES[currentIndex].image})`}} 
             className="w-full h-full rounded-2xl shadow-2xl bg-center 
             bg-cover dureaction-500">
-                <div className="flex flex-col justify-center items-center h-full text-white">
-                    <h2 className="text-3xl font-semi-bold">{SKILL_SLIDES[currentIndex].title}</h2>
-                    <p>{SKILL_SLIDES[currentIndex].description}</p>
+                <div className="flex flex-col justify-center items-center h-full w-full text-white">
+                    <h2 className="text-2xl font-semi-bold">{SKILL_SLIDES[currentIndex].title}</h2>
+                    <p className="w-1/2 self-center">{SKILL_SLIDES[currentIndex].description}</p>
                 </div>
                 
             </div>
