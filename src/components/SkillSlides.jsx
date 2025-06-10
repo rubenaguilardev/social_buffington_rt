@@ -41,7 +41,7 @@ const SkillSlides = () => {
     )
 
     return(
-        <section className="max-w-full h-[780px] w-full m-auto py-12 relative group">
+        <section className="max-w-full h-[680px] w-full m-auto py-12 relative group">
             <div style={{backgroundImage: `url(${SKILL_SLIDES[currentIndex].image})`}} 
             className="w-full h-full rounded-2xl shadow-2xl bg-center 
             bg-cover dureaction-500">
