@@ -14,7 +14,7 @@ const About = () => {
                 <div className="w-full flex justify-center sm:pr-5 mb-10">
                     <img src={profilePic} alt="Jazmin" className="rounded-2xl shadow-xl" />
                 </div>
-                <div className="md:self-start pr-5">
+                <div className="md:self-start sm:pr-5">
                     <p className="text-gray-700 flex justify-center text-lg sm:text-xl">{ABOUT_CONTENT}</p>
                 </div>
                 
