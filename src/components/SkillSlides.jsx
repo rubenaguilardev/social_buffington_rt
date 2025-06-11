@@ -3,6 +3,7 @@ import { div } from "framer-motion/client"
 import { SKILL_SLIDES } from "../constants"
 import { useState, useEffect } from 'react'
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs"
+import { useSwipeable } from "react-swipeable"
 
 const SkillSlides = () => {
 
@@ -27,6 +28,13 @@ const SkillSlides = () => {
             prevIndex === SKILL_SLIDES.length - 1 ? 0 : prevIndex + 1
         ))
     }
+
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => nextSlide(),
+        onSwipedRIght: () => prevSlide(),
+        preventScrollOnSwipe: true,
+        trackMouse: true
+    })
 
     const Arrow = ({direction, onClick}) => (
         <div className="hidded group-hover:block absolute top-[50%] translate-x-0
