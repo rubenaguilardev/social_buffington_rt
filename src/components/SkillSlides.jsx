@@ -31,13 +31,13 @@ const SkillSlides = () => {
 
     const swipeHandlers = useSwipeable({
         onSwipedLeft: () => nextSlide(),
-        onSwipedRIght: () => prevSlide(),
+        onSwipedRight: () => prevSlide(),
         preventScrollOnSwipe: true,
         trackMouse: true
     })
 
     const Arrow = ({direction, onClick}) => (
-        <div className="hidded group-hover:block absolute top-[50%] translate-x-0
+        <div className="hidden group-hover:block absolute top-[50%] translate-x-0
         translate-y-[-50%] text-2xl rounded-full p-2 text-white cursor-pointer text-gray-300"
         style={{[direction]: '10px'}}>
         { direction === 'left' ? (
@@ -49,12 +49,12 @@ const SkillSlides = () => {
     )
 
     return(
-        <section className="max-w-full h-[680px] w-full m-auto py-12 relative group">
+        <section className="max-w-full h-[680px] w-full m-auto py-12 relative group" {...swipeHandlers}>
             <div style={{backgroundImage: `url(${SKILL_SLIDES[currentIndex].image})`}} 
             className="w-full h-full rounded-2xl shadow-2xl bg-center 
-            bg-cover dureaction-500">
+            bg-cover duration-500">
                 <div className="flex flex-col justify-center items-center h-full w-full text-white">
-                    <h2 className="text-2xl font-semi-bold">{SKILL_SLIDES[currentIndex].title}</h2>
+                    <h2 className="text-2xl font-semibold">{SKILL_SLIDES[currentIndex].title}</h2>
                     <p className="w-1/2 self-center text-center">{SKILL_SLIDES[currentIndex].description}</p>
                 </div>
                 
