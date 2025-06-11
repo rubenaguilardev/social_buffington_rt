@@ -37,7 +37,7 @@ const SkillSlides = () => {
     })
 
     const Arrow = ({direction, onClick}) => (
-        <div className="hidden group-hover:block absolute top-[50%] translate-x-0
+        <div className="hidden sm:flex group-hover:block absolute top-[50%] translate-x-0
         translate-y-[-50%] text-2xl rounded-full p-2 text-white cursor-pointer text-gray-300"
         style={{[direction]: '10px'}}>
         { direction === 'left' ? (
