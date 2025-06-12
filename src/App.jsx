@@ -2,7 +2,9 @@
 import Header from "./components/Header"
 import SideBars from "./components/SideBars"
 import About from "./components/About"
-import SkillSlides from "./components/SkillSlides"
+import Work from "./components/Work"
+import Gallery from "./components/Gallery"
+import { MY_WORK } from "./constants/index"
 
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
         <Header />
         <SideBars />
         <About/>
+        <Work work={MY_WORK}/>
+        <Gallery/>
       </div> 
     </div>
     

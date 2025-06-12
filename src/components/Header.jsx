@@ -1,11 +1,11 @@
-import { HERO_TEXT, } from "../constants"
+import { HERO_TEXT, HERO_SKILLS } from "../constants"
 import { useTypewriter } from 'react-simple-typewriter'
 import Nav from "./Nav"
 
 const Header = () => {
 
     const [text] = useTypewriter({
-        words: ['Digital Marketing.', 'Social Media.', 'Photography.', 'Event Planning.', 'Design.'],
+        words: HERO_SKILLS,
         loop: {},
         typeSpeed: 120,
         deleteSpeed: 80
@@ -16,7 +16,7 @@ const Header = () => {
             <Nav />
             <main className="flex flex-1 items-center md:px-15 lg:px-22 xl:px-30 2xl:px-44">
                 <div>
-                    <h1 className="text-[#6633ee] pb-2 text-md sm:text-xl lg:text-xl text-custom">Hi, nice to meet you. My name is</h1>
+                    <h1 className="pb-2 text-md sm:text-xl lg:text-xl text-custom">Hi, nice to meet you. My name is</h1>
                     <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl
                     tracking-tighter font-semibold text-gray-900 pb-1">
                     Jazmin Buffington.
