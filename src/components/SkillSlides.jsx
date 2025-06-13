@@ -1,5 +1,3 @@
-
-import { div } from "framer-motion/client"
 import { SKILL_SLIDES } from "../constants"
 import { useState, useEffect } from 'react'
 import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from "react-icons/bs"

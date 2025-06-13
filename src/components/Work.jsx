@@ -18,9 +18,16 @@ const Work = ({work}) => {
                 </div>
             ))
         } else if (section.id === 1) {
-            return section.content.map((img, index) => (
-                <img key={index} src={img} className='w-2/3 rounded-2xl shadow-xl'/>)
-        )} else {
+            return (
+                <div className="flex snap-x snap-mandatory overflow-x-auto gap-2 pb-4 scroll-smooth 
+                hide-scrollbar items-start">
+                    {section.content.map((img, index) => (
+                        <img key={index} src={img}
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg shadow-xl object-cover"/>
+                    ))} 
+                </div>
+            )
+        } else {
             return (
                 <div className="flex snap-x snap-mandatory overflow-x-auto gap-2 pb-4 scroll-smooth hide-scrollbar">
                     {section.content.map((blog, index) => (
@@ -32,8 +39,8 @@ const Work = ({work}) => {
                         <p className="text-gray-700 text-sm">{blog.description}</p>
                     </div></a> ))}
                 </div>
-                )
-            }
+            )
+        }
     }
 
     return (
