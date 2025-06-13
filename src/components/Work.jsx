@@ -34,7 +34,7 @@ const Work = ({work}) => {
                         className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
                         <img key={'four'} src={section.content[5]}
                      
-                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover w-[185px]"/>
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover w-[160px]"/>
                     </div>
                     <div className='flex flex-col gap-[.6rem]'>
                         <img key={'five'} src={section.content[3]}
