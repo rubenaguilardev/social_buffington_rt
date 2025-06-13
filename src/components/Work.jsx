@@ -24,7 +24,7 @@ const Work = ({work}) => {
             return (
                 <div className="flex flex-nowrap gap-6 overflow-x-auto pb-4">
                     {section.content.map((blog, index) => (
-                    <div key={index} className="inline-flex flex-col w-[70vw] max-w-md shrink-0 rounded-b-lg
+                    <div key={index} className="inline-flex flex-col w-[75vw] max-w-md shrink-0 rounded-b-lg
                     bg-white shadow-lg p-4 text-center">
                         <img src={blog.image} className="w-full h-auto object-cover rounded-md mb-3"
                         alt={`blog-${index}`}/>
@@ -59,7 +59,7 @@ const Work = ({work}) => {
                 ))}
             </div>
         </div>
-        <div className='flex flex items-center gap-12 overflow-visible'>{renderContent(work[activeTab])}</div>
+        <div className='flex flex items-center gap-12 overflow-visible pb-10'>{renderContent(work[activeTab])}</div>
         
     </section>
     )
