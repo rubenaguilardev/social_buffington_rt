@@ -109,7 +109,7 @@ export const MY_WORK = [
             {
                 image: blog2,
                 description: '7 Essential Tips On How To Propose',
-                ulr: 'https://engaged.robbinsbrothers.com/7-essential-tips-on-how-to-propose'
+                url: 'https://engaged.robbinsbrothers.com/7-essential-tips-on-how-to-propose'
             },
             {
                 image: blog3,

@@ -22,22 +22,22 @@ const Work = ({work}) => {
                 <img key={index} src={img} className='w-2/3 rounded-2xl shadow-xl'/>)
         )} else {
             return (
-                <div className="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-6 scroll-smooth hide-scrollbar">
+                <div className="flex snap-x snap-mandatory overflow-x-auto gap-4 pb-4 scroll-smooth hide-scrollbar">
                     {section.content.map((blog, index) => (
-                    <div key={index}
+                    <a href={blog.url}><div key={index} 
                     className="snap-center shrink-0 flex flex-col w-[75vw] max-w-md rounded-lg bg-white 
                     shadow-md p-4 text-center">
                         <img src={blog.image} className="w-full h-full object-cover rounded-md mb-4"
                         alt={`blog-${index}`}/>
-                        <a href={blog.url}><p className="text-gray-700 text-sm">{blog.description}</p></a> 
-                    </div>))}
+                        <p className="text-gray-700 text-sm">{blog.description}</p>
+                    </div></a> ))}
                 </div>
                 )
             }
     }
 
     return (
-        <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44'>
+        <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44 mb-12'>
            <section id='about' className="flex flex-col">
             <div className="flex items-center gap-3 mb-12">
                 <p className="text-3xl font-semibold text-gray-900">
@@ -45,7 +45,7 @@ const Work = ({work}) => {
                 <div className="flex-1 h-px bg-[#00519c]"></div>
             </div>
         </section>
-        <div className='flex justify-center border rounded-t-lg bg-gray-900'>
+        <div className='flex justify-center border border-custom rounded-t-2xl bg-gray-900'>
             <div className='flex flex-wrap'>
                 {work.map((type, index) => (
                     <button 
@@ -59,8 +59,7 @@ const Work = ({work}) => {
                 ))}
             </div>
         </div>
-        <div className='flex flex items-center overflow-visible pt-4 pb-10 pl-4 
-        bg-gradient-to-b from-gray-900 via-transparent to-white'>
+        <div className='flex flex items-center overflow-visible pt-4 pl-4 rounded-b-2xl bg-gray-900'>
             {renderContent(work[activeTab])}
         </div>
         
