@@ -1,16 +1,32 @@
-import { div } from 'framer-motion/client'
 import { useState } from 'react'
+import { MY_WORK } from "../constants/index"
+import { div } from 'framer-motion/client'
+
 
 const Work = ({work}) => {
 
     const [activeTab, setActiveTab] = useState(0)
 
-    const renderContent = (content) => (
-        <div>
-            <h2>{content.title}</h2>
-            <div>{content.media}</div>
-        </div>
-    )
+    const renderContent = section => {
+        if (section.id === 0) {
+            return section.content.map((instagram, index) => (
+                <div key={index}>
+                    <img src={instagram.image}/>
+                    <p>{instagram.description}</p>
+                </div>
+            ))
+        } else if (section.id === 1) {
+            return section.content.map((img, index) => (
+                <img key={index} src={img} className='w-[48%] rounded-2xl'/>)
+        )} else {
+            return section.content.map((blog, index) => (
+                <div key={index}>
+                    <img src={blog.image}/>
+                    <p>{blog.description}</p>
+                </div>
+            ))
+        }
+    }
 
     return (
         <section id='#work' className=''>
@@ -20,9 +36,6 @@ const Work = ({work}) => {
                 <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
                 <div className="flex-1 h-px bg-[#00519c]"></div>
             </div>
-           
-            
-           
         </section>
         <div className='flex flex-wrap'>
             {work.map((type, index) => (
@@ -36,8 +49,7 @@ const Work = ({work}) => {
                 </button>
             ))}
         </div>
-         
-        <div>{renderContent(work[activeTab].content)}</div>
+        <div>{renderContent(work[activeTab])}</div>
     </section>
     )
 }
