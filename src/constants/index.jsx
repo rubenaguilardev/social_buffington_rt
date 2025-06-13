@@ -107,6 +107,11 @@ export const MY_WORK = [
                 url: 'https://blog.coldwellbanker.com/6-home-decor-styles-engagement-rings-match/'
             },
             {
+                image: blog4,
+                description: 'Jewelry Gift Ideas For Every Kind of Woman',
+                url: 'https://engaged.robbinsbrothers.com/jewelry-gift-ideas-for-every-kind-of-woman'
+            },
+            {
                 image: blog2,
                 description: '7 Essential Tips On How To Propose',
                 url: 'https://engaged.robbinsbrothers.com/7-essential-tips-on-how-to-propose'
@@ -115,11 +120,6 @@ export const MY_WORK = [
                 image: blog3,
                 description: '5 Times You Should Remove Your Ring',
                 url: 'https://engaged.robbinsbrothers.com/5-times-you-should-remove-your-ring'
-            },
-            {
-                image: blog4,
-                description: 'Jewelry Gift Ideas For Every Kind of Woman',
-                url: 'https://engaged.robbinsbrothers.com/jewelry-gift-ideas-for-every-kind-of-woman'
             }
         ]
     }
