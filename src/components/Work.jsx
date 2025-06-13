@@ -22,7 +22,7 @@ const Work = ({work}) => {
                 <img key={index} src={img} className='w-2/3 rounded-2xl shadow-xl'/>)
         )} else {
             return (
-                <div className="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-6 scroll-smooth">
+                <div className="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-6 scroll-smooth hide-scrollbar">
                     {section.content.map((blog, index) => (
                     <div key={index}
                     className="snap-center shrink-0 flex flex-col w-[75vw] max-w-md rounded-lg bg-white 
@@ -59,7 +59,10 @@ const Work = ({work}) => {
                 ))}
             </div>
         </div>
-        <div className='flex flex items-center overflow-visible pb-10'>{renderContent(work[activeTab])}</div>
+        <div className='flex flex items-center overflow-visible pt-4 pb-10 pl-4 
+        bg-gradient-to-b from-gray-900 via-transparent to-white'>
+            {renderContent(work[activeTab])}
+        </div>
         
     </section>
     )
