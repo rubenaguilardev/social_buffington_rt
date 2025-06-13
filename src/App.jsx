@@ -4,7 +4,7 @@ import SideBars from "./components/SideBars"
 import About from "./components/About"
 import Work from "./components/Work"
 import Gallery from "./components/Gallery"
-import { MY_WORK } from "./constants/index"
+import { MY_WORK, MY_WORK_TOP } from "./constants/index"
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Header />
         <SideBars />
         <About/>
-        <Work work={MY_WORK}/>
+        <Work work={MY_WORK} workTop={MY_WORK_TOP}/>
         <Gallery/>
       </div> 
     </div>

@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { MY_WORK } from "../constants/index"
-import { div } from 'framer-motion/client'
 
 
-const Work = ({work}) => {
+const Work = ({work, workTop}) => {
 
     const [activeTab, setActiveTab] = useState(0)
 
@@ -71,6 +69,14 @@ const Work = ({work}) => {
                 <div className="flex-1 h-px bg-[#00519c]"></div>
             </div>
         </section>
+        <div>
+            <p>{workTop[0].description}</p>
+            <img src={workTop[0].image} alt="" />
+        </div>
+        <div>
+            <p>{workTop[1].description}</p>
+            <img src={workTop[1].image} alt="" />
+        </div>
         <div className='flex justify-center rounded-t-2xl bg-gray-900'>
             <div className='flex flex-wrap'>
                 {work.map((type, index) => (
@@ -85,6 +91,7 @@ const Work = ({work}) => {
                 ))}
             </div>
         </div>
+    
         <div className='flex flex items-center overflow-visible pt-4 pl-4 rounded-b-2xl bg-gray-900'>
             {renderContent(work[activeTab])}
         </div>

@@ -58,35 +58,28 @@ export const SKILL_SLIDES = [
     },
 ]
 
-
-const blogPosts = (posts) => (
-    posts.map((post, index) => (
-        <div>
-            <img src={post.image} alt=""/>
-            <p>{post.description}</p>
-        </div>
-    ))
-)
+export const MY_WORK_TOP = [
+    
+    {
+        image: wyndham,
+        description : `The team at Wyndham Grand Clearwater Beach entrusted Jazmin with the task of presenting a more authentic
+        and captivating representation of its unique guest experiences across social channels.
+        As a result of Jazmin's monthly efforts, there has been a notable surge in organic engagements (+209%), audience (+51%), 
+        and impressions (+178%) for Instagram from April 2023 to May 2024 in comparison to the previous y`
+    },
+    {
+        image: margaritaville,
+        description: `The Margaritaville Palm Springs team expressed a desire to boost their organic follower base. Jazmin successfully 
+        increased their followers by 50% within a span of 20 months.`
+    }  
+]
 
 export const MY_WORK = [
     {
         label: 'Instagram',
         id: 0,
         content: 
-            [ 
-                {
-                image: wyndham,
-                description : `The team at Wyndham Grand Clearwater Beach entrusted Jazmin with the task of presenting a more authentic
-                and captivating representation of its unique guest experiences across social channels.
-                As a result of Jazmin's monthly efforts, there has been a notable surge in organic engagements (+209%), audience (+51%), 
-                and impressions (+178%) for Instagram from April 2023 to May 2024 in comparison to the previous y`
-                },
-            {
-                image: margaritaville,
-                description: `The Margaritaville Palm Springs team expressed a desire to boost their organic follower base. Jazmin successfully 
-                increased their followers by 50% within a span of 20 months.`
-            }  
-            ]
+            []
      },
 
     { 
