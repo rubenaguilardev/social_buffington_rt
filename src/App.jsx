@@ -16,7 +16,7 @@ const App = () => {
           style={{background: "radial-gradient(125% 125% at 50% 90%, #fff 48%, #0080ff 100%)"}}/>
         </div>
       </div>
-      <div className="px-6">
+      <div className="px-5">
         <Header />
         <SideBars />
         <About/>
