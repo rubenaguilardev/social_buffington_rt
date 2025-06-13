@@ -23,7 +23,7 @@ const Work = ({work}) => {
                 hide-scrollbar items-start">
                     {section.content.map((img, index) => (
                         <img key={index} src={img}
-                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg shadow-xl object-cover"/>
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
                     ))} 
                 </div>
             )
