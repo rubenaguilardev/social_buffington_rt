@@ -21,10 +21,29 @@ const Work = ({work}) => {
             return (
                 <div className="flex snap-x snap-mandatory overflow-x-auto gap-2 pb-4 scroll-smooth 
                 hide-scrollbar items-start">
-                    {section.content.map((img, index) => (
+                    {/* {section.content.map((img, index) => (
                         <img key={index} src={img}
                         className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
-                    ))} 
+                    ))}  */}
+                    <img key={'one'} src={section.content[0]}
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
+                    <img key={'two'} src={section.content[1]}
+                    className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
+                    <div className='flex flex-col gap-[.6rem]'>
+                        <img key={'three'} src={section.content[2]}
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
+                        <img key={'four'} src={section.content[5]}
+                     
+                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover w-[185px]"/>
+                    </div>
+                    <div className='flex flex-col gap-[.6rem]'>
+                        <img key={'five'} src={section.content[3]}
+                        className="snap-center shrink-0 w-[83.5vw] max-w-md rounded-lg object-cover"/>
+                        <img key={'six'} src={section.content[4]}
+                     
+                        className="snap-center shrink-0 w-[83.5vw] max-w-md rounded-lg object-cover"/>
+                    </div>
+                     
                 </div>
             )
         } else {
