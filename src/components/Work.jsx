@@ -22,23 +22,23 @@ const Work = ({work}) => {
                 <img key={index} src={img} className='w-2/3 rounded-2xl shadow-xl'/>)
         )} else {
             return (
-                <div className="flex flex-nowrap gap-6 overflow-x-auto pb-4">
+                <div className="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-6 scroll-smooth">
                     {section.content.map((blog, index) => (
-                    <div key={index} className="inline-flex flex-col w-[75vw] max-w-md shrink-0 rounded-b-lg
-                    bg-white shadow-lg p-4 text-center">
-                        <img src={blog.image} className="w-full h-auto object-cover rounded-md mb-3"
+                    <div key={index}
+                    className="snap-center shrink-0 flex flex-col w-[75vw] max-w-md rounded-lg bg-white 
+                    shadow-md p-4 text-center">
+                        <img src={blog.image} className="w-full h-full object-cover rounded-md mb-4"
                         alt={`blog-${index}`}/>
-                        <a href='#'><p className="text-gray-700 text-sm">{blog.description}</p></a>
-                    </div>
-                    ))}
+                        <a href={blog.url}><p className="text-gray-700 text-sm">{blog.description}</p></a> 
+                    </div>))}
                 </div>
-            )
-        }
+                )
+            }
     }
 
     return (
-        <section id='#work' className=''>
-           <section id='about' className="flex flex-col md:px-15 lg:px-22 xl:px-30 2xl:px-44">
+        <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44'>
+           <section id='about' className="flex flex-col">
             <div className="flex items-center gap-3 mb-12">
                 <p className="text-3xl font-semibold text-gray-900">
                 <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
@@ -59,7 +59,7 @@ const Work = ({work}) => {
                 ))}
             </div>
         </div>
-        <div className='flex flex items-center gap-12 overflow-visible pb-10'>{renderContent(work[activeTab])}</div>
+        <div className='flex flex items-center overflow-visible pb-10'>{renderContent(work[activeTab])}</div>
         
     </section>
     )

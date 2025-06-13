@@ -103,19 +103,23 @@ export const MY_WORK = [
         content: [
             {
                 image: blog1,
-                description: '6 Home Décor Styles — and Engagement Rings to Match'
+                description: '6 Home Décor Styles — and Engagement Rings to Match',
+                url: 'https://blog.coldwellbanker.com/6-home-decor-styles-engagement-rings-match/'
             },
             {
                 image: blog2,
-                description: '7 Essential Tips On How To Propose'
+                description: '7 Essential Tips On How To Propose',
+                ulr: 'https://engaged.robbinsbrothers.com/7-essential-tips-on-how-to-propose'
             },
             {
                 image: blog3,
                 description: '5 Times You Should Remove Your Ring',
+                url: 'https://engaged.robbinsbrothers.com/5-times-you-should-remove-your-ring'
             },
             {
                 image: blog4,
-                description: 'Jewelry Gift Ideas For Every Kind of Woman'
+                description: 'Jewelry Gift Ideas For Every Kind of Woman',
+                url: 'https://engaged.robbinsbrothers.com/jewelry-gift-ideas-for-every-kind-of-woman'
             }
         ]
     }
