@@ -8,13 +8,16 @@ const Work = ({work, workTop}) => {
 
     const renderContent = section => {
         if (section.id === 0) {
-            return section.content.map((instagram, index) => (
-                <div key={index}>
-                    <div>
-                        <InstagramEmbed url={instagram} width='100%'/>
-                    </div>
+            return (
+                <div className="flex snap-x snap-mandatory overflow-x-auto gap-1 pb-4 scroll-smooth hide-scrollbar">
+                    {section.content.map((instagram, index) => (
+                        <div key={index}
+                        className="snap-center shrink-0 w-[80vw] max-w-md rounded-lg bg-white p-2">
+                            <InstagramEmbed url={instagram} width="100%" />
+                        </div>
+                    ))}
                 </div>
-            ))
+            )
         } else if (section.id === 1) {
             return (
                 <div className="flex snap-x snap-mandatory overflow-x-auto gap-2 pb-4 scroll-smooth 
