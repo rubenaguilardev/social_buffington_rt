@@ -12,7 +12,7 @@ const Header = () => {
     })
 
     return (
-        <header className="flex flex-col min-h-screen w-full">
+        <header className="flex flex-col min-h-screen w-full px-4">
             <Nav />
             <main className="flex flex-1 items-center md:px-15 lg:px-22 xl:px-30 2xl:px-44">
                 <div>

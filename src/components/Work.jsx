@@ -62,20 +62,20 @@ const Work = ({work, workTop}) => {
 
     return (
         <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44 mb-10'>
-           <section id='about' className="flex flex-col">
-            <div className="flex items-center gap-3 mb-10">
-                <p className="text-3xl font-semibold text-gray-900">
-                <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
-                <div className="flex-1 h-px bg-[#00519c]"></div>
-            </div>
-        </section>
-        <div>
-            <p>{workTop[0].description}</p>
-            <img src={workTop[0].image} alt="" />
+           <section id='about' className="flex flex-col px-4">
+                <div className="flex items-center gap-3 mb-10">
+                    <p className="text-3xl font-semibold text-gray-900">
+                    <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
+                    <div className="flex-1 h-px bg-[#00519c]"></div>
+                </div>
+            </section>
+        <div className='px-4 mb-10'>
+            <p className='mb-5' style={{ whiteSpace: "pre-line" }}>{workTop[0].description}</p>
+            <img src={workTop[0].image} alt="" className='rounded-2xl shadow-xl' />
         </div>
-        <div>
-            <p>{workTop[1].description}</p>
-            <img src={workTop[1].image} alt="" />
+        <div className='px-4 mb-10'>
+            <p className='mb-5'>{workTop[1].description}</p>
+            <img src={workTop[1].image} alt="" className='rounded-2xl shadow-xl'/>
         </div>
         <div className='flex justify-center'>
             <div className='flex flex-wrap'>
@@ -92,7 +92,7 @@ const Work = ({work, workTop}) => {
             </div>
         </div>
     
-        <div className='flex flex items-center overflow-visible pt-4 pl-4 rounded-2xl bg-gray-800 pr-4'>
+        <div className='flex items-center overflow-visible py-3 px-3 bg-gray-800'>
             {renderContent(work[activeTab])}
         </div>
         

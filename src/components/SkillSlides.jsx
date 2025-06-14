@@ -49,7 +49,7 @@ const SkillSlides = () => {
     return(
         <section className="max-w-full h-[680px] w-full m-auto py-12 relative group" {...swipeHandlers}>
             <div style={{backgroundImage: `url(${SKILL_SLIDES[currentIndex].image})`}} 
-            className="w-full h-full rounded-2xl shadow-2xl bg-center 
+            className="w-full h-full shadow-2xl bg-center 
             bg-cover duration-500">
                 <div className="flex flex-col justify-center items-center h-full w-full text-white">
                     <h2 className="text-2xl font-semibold">{SKILL_SLIDES[currentIndex].title}</h2>
