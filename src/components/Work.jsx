@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { InstagramEmbed } from 'react-social-media-embed'
 
 
 const Work = ({work, workTop}) => {
@@ -10,8 +11,7 @@ const Work = ({work, workTop}) => {
             return section.content.map((instagram, index) => (
                 <div key={index}>
                     <div>
-                        <img src={instagram.image}/>
-                        <p>{instagram.description}</p>
+                        <InstagramEmbed url={instagram} width='100%'/>
                     </div>
                 </div>
             ))
@@ -19,10 +19,7 @@ const Work = ({work, workTop}) => {
             return (
                 <div className="flex snap-x snap-mandatory overflow-x-auto gap-2 pb-4 scroll-smooth 
                 hide-scrollbar items-start">
-                    {/* {section.content.map((img, index) => (
-                        <img key={index} src={img}
-                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
-                    ))}  */}
+                    
                     <img key={'one'} src={section.content[0]}
                         className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
                     <img key={'two'} src={section.content[1]}
@@ -32,7 +29,7 @@ const Work = ({work, workTop}) => {
                         className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover"/>
                         <img key={'four'} src={section.content[5]}
                      
-                        className="snap-center shrink-0 w-[75vw] max-w-md rounded-lg object-cover w-[160px]"/>
+                        className="snap-center max-w-md rounded-lg object-cover w-[50%]"/>
                     </div>
                     <div className='flex flex-col gap-[.6rem]'>
                         <img key={'five'} src={section.content[3]}
@@ -61,9 +58,9 @@ const Work = ({work, workTop}) => {
     }
 
     return (
-        <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44 mb-12'>
+        <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44 mb-10'>
            <section id='about' className="flex flex-col">
-            <div className="flex items-center gap-3 mb-12">
+            <div className="flex items-center gap-3 mb-10">
                 <p className="text-3xl font-semibold text-gray-900">
                 <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
                 <div className="flex-1 h-px bg-[#00519c]"></div>
@@ -77,13 +74,13 @@ const Work = ({work, workTop}) => {
             <p>{workTop[1].description}</p>
             <img src={workTop[1].image} alt="" />
         </div>
-        <div className='flex justify-center rounded-t-2xl bg-gray-900'>
+        <div className='flex justify-center'>
             <div className='flex flex-wrap'>
                 {work.map((type, index) => (
                     <button 
                         key={index}
-                        className={`py-3 px-6 font-medium text-sm duration-300 cursor-pointer ${activeTab === index ?
-                        "border-b-4 border-custom text-gray-300 bg-gray-900" : 
+                        className={`py-3 px-6 font-medium text-sm duration-300 cursor-pointer rounded-t-lg
+                        ${activeTab === index ? "text-gray-300 bg-gray-800" : 
                         "text-gray-500 hover:text-gray-300 hover:bg-custom hover:bg-opacity-10"} `}
                         onClick={() => setActiveTab(index)}>
                         {type.label}
@@ -92,7 +89,7 @@ const Work = ({work, workTop}) => {
             </div>
         </div>
     
-        <div className='flex flex items-center overflow-visible pt-4 pl-4 rounded-b-2xl bg-gray-900'>
+        <div className='flex flex items-center overflow-visible pt-4 pl-4 rounded-2xl bg-gray-800 pr-4'>
             {renderContent(work[activeTab])}
         </div>
         
