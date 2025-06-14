@@ -12,7 +12,7 @@ const Work = ({work, workTop}) => {
                 <div className="flex snap-x snap-mandatory overflow-x-auto gap-1 pb-4 scroll-smooth hide-scrollbar">
                     {section.content.map((instagram, index) => (
                         <div key={index}
-                        className="snap-center shrink-0 w-[80vw] max-w-md rounded-lg bg-white p-2">
+                        className="snap-center shrink-0 w-[92vw] max-w-md rounded-lg bg-white p-2">
                             <InstagramEmbed url={instagram} width="100%" />
                         </div>
                     ))}
