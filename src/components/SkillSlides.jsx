@@ -37,17 +37,18 @@ const SkillSlides = () => {
     const Arrow = ({direction, onClick}) => (
         <div className="hidden sm:flex group-hover:block absolute top-[50%] translate-x-0
         translate-y-[-50%] text-2xl rounded-full p-2 text-white cursor-pointer text-gray-300"
-        style={{[direction]: '10px'}}>
+        style={{[direction]: '120px'}}>
         { direction === 'left' ? (
-            <BsFillArrowLeftCircleFill onClick={onClick} size={25}/>
+            <BsFillArrowLeftCircleFill onClick={onClick} size={30}/>
         ) : (
-            <BsFillArrowRightCircleFill onClick={onClick} size={25}/>
+            <BsFillArrowRightCircleFill onClick={onClick} size={30}/>
         )}
         </div>
     )
 
     return(
-        <section className="max-w-full h-[680px] w-full m-auto py-12 relative group" {...swipeHandlers}>
+        <section className="max-w-full h-[680px] w-full m-auto py-12 relative group md:px-15 lg:px-22 xl:px-30 2xl:px-44" 
+        {...swipeHandlers}>
             <div style={{backgroundImage: `url(${SKILL_SLIDES[currentIndex].image})`}} 
             className="w-full h-full shadow-2xl bg-center 
             bg-cover duration-500">

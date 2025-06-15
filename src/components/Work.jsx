@@ -69,34 +69,36 @@ const Work = ({work, workTop}) => {
                     <div className="flex-1 h-px bg-[#00519c]"></div>
                 </div>
             </section>
-        <div className='px-4 mb-10'>
-            <p className='mb-5' style={{ whiteSpace: "pre-line" }}>{workTop[0].description}</p>
-            <img src={workTop[0].image} alt="" className='rounded-2xl shadow-xl' />
-        </div>
-        <div className='px-4 mb-10'>
-            <p className='mb-5'>{workTop[1].description}</p>
-            <img src={workTop[1].image} alt="" className='rounded-2xl shadow-xl'/>
-        </div>
-        <div className='flex justify-center'>
-            <div className='flex flex-wrap'>
-                {work.map((type, index) => (
-                    <button 
-                        key={index}
-                        className={`py-3 px-6 font-medium text-sm duration-300 cursor-pointer rounded-t-lg
-                        ${activeTab === index ? "text-gray-300 bg-gray-800" : 
-                        "text-gray-500 hover:text-gray-300 hover:bg-custom hover:bg-opacity-10"} `}
-                        onClick={() => setActiveTab(index)}>
-                        {type.label}
-                    </button>
-                ))}
+            <div className='flex'>
+                 <div className='px-4 mb-10'>
+                        <p className='mb-5' style={{ whiteSpace: "pre-line" }}>{workTop[0].description}</p>
+                        <img src={workTop[0].image} alt="" className='rounded-2xl shadow-xl' />
+                    </div>
+                    <div className='px-4 mb-10'>
+                        <p className='mb-5'>{workTop[1].description}</p>
+                        <img src={workTop[1].image} alt="" className='rounded-2xl shadow-xl'/>
+                    </div>
+                </div>
+           
+            <div className='flex justify-center'>
+                <div className='flex flex-wrap'>
+                    {work.map((type, index) => (
+                        <button 
+                            key={index}
+                            className={`py-3 px-6 font-medium text-sm duration-300 cursor-pointer rounded-t-lg
+                            ${activeTab === index ? "text-gray-300 bg-gray-800" : 
+                            "text-gray-500 hover:text-gray-300 hover:bg-custom hover:bg-opacity-10"} `}
+                            onClick={() => setActiveTab(index)}>
+                            {type.label}
+                        </button>
+                    ))}
+                </div>
             </div>
-        </div>
     
-        <div className='flex items-center overflow-visible py-3 px-3 bg-gray-800'>
-            {renderContent(work[activeTab])}
-        </div>
-        
-    </section>
+            <div className='flex items-center overflow-visible py-3 px-3 bg-gray-800'>
+                {renderContent(work[activeTab])}
+            </div>
+        </section>
     )
 }
 
