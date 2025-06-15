@@ -69,7 +69,7 @@ const Work = ({work, workTop}) => {
                     <div className="flex-1 h-px bg-[#00519c]"></div>
                 </div>
             </section>
-            <div className='flex'>
+            <div className='sm:flex'>
                  <div className='px-4 mb-10'>
                         <p className='mb-5' style={{ whiteSpace: "pre-line" }}>{workTop[0].description}</p>
                         <img src={workTop[0].image} alt="" className='rounded-2xl shadow-xl' />
