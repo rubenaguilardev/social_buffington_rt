@@ -12,6 +12,7 @@ const Gallery = () => {
                     <div className="flex-1 h-px bg-[#00519c]"></div>
                 </div>
             </section>
+            <div></div>
             
         </section>
         
