@@ -1,7 +1,27 @@
-import { useSwipeable } from "react-swipeable"
 import { PHOTOS } from "../constants/photos.jsx"
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const Gallery = () => {
+
+    const images = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    originalAlt: 'Hi'
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+  
+  
+];
+
     return (
         
         <section id='#work' className=''>
@@ -12,11 +32,16 @@ const Gallery = () => {
                     <div className="flex-1 h-px bg-[#00519c]"></div>
                 </div>
             </section>
-            <div></div>
-            
+            <ImageGallery items={PHOTOS}
+                showPlayButton={true}
+                showIndex={true}
+            />;
         </section>
         
     )
 }
 
 export default Gallery
+
+
+
