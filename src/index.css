@@ -20,6 +20,21 @@
   --color-custom: #00519c;
 }
 
+.fullscreen-gallery .image-gallery-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.fullscreen-gallery .image-gallery-content {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.fullscreen-gallery .image-gallery-slide-wrapper {
+  height: 100vh;
+}
 
 
 
