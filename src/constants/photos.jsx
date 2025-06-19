@@ -1,3 +1,4 @@
+import family from '../assets/family.jpg'
 import photo1 from '../assets/gallery/001.jpg'
 import photo2 from '../assets/gallery/002.jpg'
 import photo3 from '../assets/gallery/003.jpg'
@@ -54,6 +55,8 @@ import photo53 from '../assets/gallery/053.jpg'
 import photo54 from '../assets/gallery/054.jpg'
 import photo55 from '../assets/gallery/055.jpg'
 
+
+export const FAMILY = family
 
 
 export const PHOTOS = [
