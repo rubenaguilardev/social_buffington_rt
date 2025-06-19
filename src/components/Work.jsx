@@ -62,7 +62,7 @@ const Work = ({work, workTop}) => {
 
     return (
         <section id='#work' className='md:px-15 lg:px-22 xl:px-30 2xl:px-44 mb-10'>
-           <section id='about' className="flex flex-col px-4">
+           <section id='work' className="flex flex-col px-4">
                 <div className="flex items-center gap-3 mb-10">
                     <p className="text-3xl font-semibold text-gray-900">
                     <span className="text-[1.5rem] mr-2 text-custom">02.</span>My Work</p>
@@ -86,7 +86,7 @@ const Work = ({work, workTop}) => {
                         <button 
                             key={index}
                             className={`py-3 px-6 font-medium text-sm duration-300 cursor-pointer rounded-t-lg
-                            ${activeTab === index ? "text-gray-300 bg-gray-800" : 
+                            ${activeTab === index ? "text-gray-300 bg-gray-900/85" : 
                             "text-gray-500 hover:text-gray-300 hover:bg-custom hover:bg-opacity-10"} `}
                             onClick={() => setActiveTab(index)}>
                             {type.label}
@@ -95,7 +95,7 @@ const Work = ({work, workTop}) => {
                 </div>
             </div>
     
-            <div className='flex items-center overflow-visible py-3 px-3 bg-gray-800'>
+            <div className='flex items-center overflow-visible py-3 px-3 bg-gray-900/85'>
                 {renderContent(work[activeTab])}
             </div>
         </section>
