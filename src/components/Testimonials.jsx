@@ -9,7 +9,7 @@ import {FreeMode, Pagination} from 'swiper/modules'
 const Testimonials = () => {
 
     return (
-        <section className="flex items-center justify-center flex-col my-40">
+        <section className="flex items-center justify-center flex-col mt-40 mb-20">
             <h2 className="text-4xl font-semibold mb-10 text-gray-900 text-center">Check out what my colleagues have to say</h2>
             <Swiper
                 slidesPerView="auto"

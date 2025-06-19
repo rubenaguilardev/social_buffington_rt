@@ -24,7 +24,7 @@ const Contact = () => {
     }
     return (
         <>
-        <section id='contact' className='flex items-center justify-center py-20'>
+        <section id='contact' className='flex justify-center pb-20'>
             <div className="px-4 w-150">
                 <h2>Get In Touch</h2>
                 <form className="space-y-6" onSubmit={handleSubmit}>
