@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
             
         </section>
-        <div className="flex flex-col md:px-15 lg:px-22 xl:px-30 2xl:px-44 px-4">
+        <div className="flex flex-col md:px-15 lg:px-22 xl:px-30 2xl:px-44 px-4 mb-15">
             <img src={FAMILY} alt="" className="rounded-2xl shadow-xl"  />
         </div>
         

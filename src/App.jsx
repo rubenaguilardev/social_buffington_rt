@@ -8,6 +8,7 @@ import Gallery from "./components/Gallery"
 import { MY_WORK, MY_WORK_TOP } from "./constants/index"
 import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Gallery/>
         <Testimonials/>
         <Contact/>
+        <Footer />
       </div> 
     </div>
     
