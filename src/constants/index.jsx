@@ -14,6 +14,8 @@ import blog1 from '../assets/blogs/1.png'
 import blog2 from '../assets/blogs/2.png'
 import blog3 from '../assets/blogs/3.png'
 import blog4 from '../assets/blogs/4.png'
+import testimonial1 from '../assets/testimonials/1.png'
+import testimonial3 from '../assets/testimonials/3.png'
 
 
 export const HERO_SKILLS = [
@@ -127,6 +129,7 @@ export const MY_WORK = [
 
 export const TESTIMONIAL_CONTENT = [
     {
+        background: testimonial1,
         author: 'Greg Lutchko',
         company: 'Margaritaville Resort Palm Springs',
         testimonial: `
@@ -137,6 +140,18 @@ export const TESTIMONIAL_CONTENT = [
         `
     },
     {
+        author: 'Taylor Eckard',
+        company: 'Wyndham Grand Clearwater Beach',
+        testimonial: `
+            Working with Jazmin has been an absolute pleasure. Her professionalism and dedication are truly
+            exceptional. Jazmin consistently goes above and beyond, taking the time to understand our unique
+            needs and tailoring her approach to meet them. Her expertise in social media has been transformative for
+            our engagement and outreach, helping us connect with our audience in innovative ways. I wholeheartedly recommend 
+            Jazmin for anyone seeking a knowledgeable and committed social media expert.
+        `
+    },
+    {
+        background: testimonial3,
         author: 'Annie Humphrey',
         company: 'Save the Storks',
         testimonial: `
@@ -151,15 +166,4 @@ export const TESTIMONIAL_CONTENT = [
             exquisite added bonus
         `
     },
-    {
-        author: 'Taylor Eckard',
-        company: 'Wyndham Grand Clearwater Beach',
-        testimonial: `
-            Working with Jazmin has been an absolute pleasure. Her professionalism and dedication are truly
-            exceptional. Jazmin consistently goes above and beyond, taking the time to understand our unique
-            needs and tailoring her approach to meet them. Her expertise in social media has been transformative for
-            our engagement and outreach, helping us connect with our audience in innovative ways. I wholeheartedly recommend 
-            Jazmin for anyone seeking a knowledgeable and committed social media expert.
-        `
-    }
 ]

@@ -19,7 +19,7 @@ const Gallery = () => {
                 showPlayButton={true}
                 showIndex={true}
                 slideOnThumbnailOver={true}
-            />;
+            />
         </section>
         
     )
