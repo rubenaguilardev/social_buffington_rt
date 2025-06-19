@@ -95,7 +95,7 @@ const Work = ({work, workTop}) => {
                 </div>
             </div>
     
-            <div className='flex items-center overflow-visible py-3 px-3 bg-gray-900/85'>
+            <div className='flex items-center overflow-visible py-3 px-3 bg-gray-900/85 shadow-2xl'>
                 {renderContent(work[activeTab])}
             </div>
         </section>

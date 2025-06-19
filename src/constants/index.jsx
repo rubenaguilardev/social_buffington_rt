@@ -15,6 +15,7 @@ import blog2 from '../assets/blogs/2.png'
 import blog3 from '../assets/blogs/3.png'
 import blog4 from '../assets/blogs/4.png'
 import testimonial1 from '../assets/testimonials/1.png'
+import testimonial2 from '../assets/testimonials/2.png'
 import testimonial3 from '../assets/testimonials/3.png'
 
 
@@ -140,6 +141,7 @@ export const TESTIMONIAL_CONTENT = [
         `
     },
     {
+        background: testimonial2,
         author: 'Taylor Eckard',
         company: 'Wyndham Grand Clearwater Beach',
         testimonial: `
