@@ -4,7 +4,7 @@ import { FaLinkedin, FaEnvelope} from 'react-icons/fa6';
 const Footer = () => {
     return (
         <section className='ml-3'>
-            <div className='flex gap-8 mb-5'>
+            <div className='flex gap-8 mb-5 justify-between'>
                 <a href="https://www.linkedin.com/in/jazmin-aguilar-buffington/" className="mb-4 hover:text-[#413268] 
                 transition text-4xl text-blue-500 ">
                 <FaLinkedin />
