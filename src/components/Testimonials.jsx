@@ -10,9 +10,9 @@ const Testimonials = () => {
         <div key={index} 
         style={{backgroundImage: `url(${test.background})`}}
         className="bg-cover bg-center text-white">
-            <div className="bg-gray-900">
+            <div className="flex flex-col gap-2 bg-gray-900">
                  <h3>{test.author}</h3>
-                <h4>{test.company}</h4>
+                <h4 className="mb-5">{test.company}</h4>
                 <p>{test.testimonial}</p>
             </div>
            
