@@ -24,7 +24,6 @@ const App = () => {
         <About/>
         <SkillSlides/>
         <Work work={MY_WORK} workTop={MY_WORK_TOP}/>
-        
         <Gallery/>
         <Testimonials/>
       </div> 
